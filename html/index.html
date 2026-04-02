@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>okumurachie | ホーム</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <div class="bg-orb orb1" aria-hidden="true"></div>
+        <div class="bg-orb orb2" aria-hidden="true"></div>
+
+        <!-- ===== ナビゲーション ===== -->
+        <nav id="navbar">
+            <a class="nav-logo" href="index.html">oku<span>.</span></a>
+            <button
+                class="hamburger"
+                id="menuBtn"
+                aria-label="メニューを開く"
+                aria-expanded="false"
+            >
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-active">ホーム</a></li>
+                <li><a href="projects.html">プロジェクト</a></li>
+                <li><a href="skills.html">スキル</a></li>
+                <li><a href="profile.html">プロフィール</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- ヒーロー -->
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="hero-tag">✦ Web Developer Portfolio</span>
+                    <h1 class="hero-title">
+                        コードで、<br /><em>未来をつくる。</em>
+                    </h1>
+                    <p class="hero-desc">
+                        プログラミングスクールを修了し、Webアプリ開発に取り組んでいます。<br />
+                        Laravel・Vue.js・Nuxt.js
+                        を使ったフルスタック開発が得意です。
+                    </p>
+                    <div class="hero-btns">
+                        <a class="btn-primary" href="projects.html"
+                            >プロジェクトを見る</a
+                        >
+                        <a class="btn-ghost" href="contact.html"
+                            >お問い合わせ</a
+                        >
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="code-card">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <pre
+                            class="code-block"
+                        ><code><span class="c-kw">class</span> <span class="c-fn">Developer</span> {
+<span class="c-kw">public function</span> <span class="c-fn">introduce</span>() {
+    <span class="c-kw">return</span> [
+    <span class="c-str">'name'</span>  =&gt; <span class="c-str">'okumurachie'</span>,
+    <span class="c-str">'stack'</span> =&gt; [<span class="c-str">'Laravel'</span>,
+                <span class="c-str">'Vue.js'</span>,
+                <span class="c-str">'Nuxt.js'</span>],
+    <span class="c-str">'goal'</span>  =&gt; <span class="c-str">'成長中🚀'</span>,
+    ];
+}
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ホームからの各ページへのナビカード -->
+            <section class="home-cards">
+                <a class="home-card reveal" href="projects.html">
+                    <span class="home-card-icon">🛒</span>
+                    <div class="home-card-body">
+                        <div class="home-card-title">プロジェクト</div>
+                        <div class="home-card-desc">
+                            制作した4つのWebアプリを紹介
+                        </div>
+                    </div>
+                    <svg
+                        class="home-card-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a class="home-card reveal" href="skills.html">
+                    <span class="home-card-icon">⚙️</span>
+                    <div class="home-card-body">
+                        <div class="home-card-title">スキル</div>
+                        <div class="home-card-desc">
+                            使用できる技術スタックを紹介
+                        </div>
+                    </div>
+                    <svg
+                        class="home-card-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a class="home-card reveal" href="profile.html">
+                    <span class="home-card-icon">👤</span>
+                    <div class="home-card-body">
+                        <div class="home-card-title">プロフィール</div>
+                        <div class="home-card-desc">自己紹介・経歴を紹介</div>
+                    </div>
+                    <svg
+                        class="home-card-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a class="home-card reveal" href="contact.html">
+                    <span class="home-card-icon">✉️</span>
+                    <div class="home-card-body">
+                        <div class="home-card-title">お問い合わせ</div>
+                        <div class="home-card-desc">
+                            お仕事のご相談はこちらから
+                        </div>
+                    </div>
+                    <svg
+                        class="home-card-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 okumurachie — Designed &amp; Built with ♥</p>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
+</html>
