@@ -1002,8 +1002,9 @@ textarea {
         text-align: left;
     }
     .profile-badges {
-        flex-direction: row;
-        width: auto;
+        /* flex-direction: row;
+        width: auto; */
+        display: none;
     }
 
     /* フォーム */
