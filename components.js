@@ -1,18 +1,23 @@
+const BASE =
+    location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+        ? ''
+        : '/okumurachie-portfolio';
+
 const NAV_HTML = `
 <nav id="navbar">
-    <a class="nav-logo" href="index.html">
-        <img class="nav-image" src="../images/inago.png" alt="いなご" />
+    <a class="nav-logo" href="${BASE}/index.html">
+        <img class="nav-image" src="${BASE}/images/inago.png" alt="いなご" />
         <span class="nav-text">C.Okumura</span>
     </a>
     <button class="hamburger" id="menuBtn" aria-label="メニューを開く" aria-expanded="false">
         <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="index.html"    data-page="index">ホーム</a></li>
-        <li><a href="projects.html" data-page="projects">プロジェクト</a></li>
-        <li><a href="skills.html"   data-page="skills">スキル</a></li>
-        <li><a href="profile.html"  data-page="profile">プロフィール</a></li>
-        <li><a href="contact.html"  data-page="contact">お問い合わせ</a></li>
+        <li><a href="${BASE}/index.html"    data-page="index">ホーム</a></li>
+        <li><a href="${BASE}/html/projects.html" data-page="projects">プロジェクト</a></li>
+        <li><a href="${BASE}/html/skills.html"   data-page="skills">スキル</a></li>
+        <li><a href="${BASE}/html/profile.html"  data-page="profile">プロフィール</a></li>
+        <li><a href="${BASE}/html/contact.html"  data-page="contact">お問い合わせ</a></li>
     </ul>
 </nav>
 `;
