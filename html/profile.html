@@ -16,28 +16,6 @@
         <div class="bg-orb orb1" aria-hidden="true"></div>
         <div class="bg-orb orb2" aria-hidden="true"></div>
 
-        <!-- ===== ナビゲーション ===== -->
-        <nav id="navbar">
-            <a class="nav-logo" href="index.html">oku<span>.</span></a>
-            <button
-                class="hamburger"
-                id="menuBtn"
-                aria-label="メニューを開く"
-                aria-expanded="false"
-            >
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="projects.html">プロジェクト</a></li>
-                <li><a href="skills.html">スキル</a></li>
-                <li>
-                    <a href="profile.html" class="nav-active">プロフィール</a>
-                </li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-
         <main class="page-main">
             <!-- ページヘッダー -->
             <div class="page-header">
@@ -48,9 +26,15 @@
             <!-- プロフィールカード -->
             <div class="profile-card reveal">
                 <div class="profile-left">
-                    <div class="profile-avatar">O</div>
-                    <div class="profile-name">okumurachie</div>
-                    <div class="profile-role">Web Developer（見習い）</div>
+                    <div class="profile-avatar">
+                        <img
+                            class="profile-image"
+                            src="../images/profile.png"
+                            alt="本人画像"
+                        />
+                    </div>
+                    <div class="profile-name">奥村千絵</div>
+                    <div class="profile-role">Web Developer</div>
                     <div class="profile-badges">
                         <span class="badge">🗾 日本</span>
                         <span class="badge">🎓 スクール卒</span>
@@ -70,15 +54,16 @@
                 <div class="profile-right">
                     <h2 class="profile-section-title">自己紹介</h2>
                     <p class="profile-text">
-                        プログラミングスクールを修了し、Web開発の世界に飛び込みました。
-                        バックエンドはLaravel、フロントエンドはNuxt.js・Vue.jsを中心に学び、
-                        フルスタックで開発できるエンジニアを目指しています。
+                        旅行会社での手配・旅程作成、地域金融機関での金融・総務業務など、
+                        異なる業種・職種で十数年のキャリアを積んできました。
+                        その中で「もっとシステムを理解して仕事に活かしたい」という思いから
+                        プログラミングを学び、Web開発の世界へ踏み出しました。
                     </p>
                     <p class="profile-text">
-                        まだ経験は浅いですが、学ぶことへの熱意は誰にも負けません。
-                        クラウドソーシングを通じて実務経験を積みながら、
-                        一緒にプロダクトを成長させてくれる方と働きたいと思っています。
-                        小さな案件から丁寧に、誠実に取り組みます。
+                        バックエンドはLaravel、フロントエンドはNuxt.js・Vue.jsを中心に習得しました。
+                        開発の実務経験はまだこれからですが、様々な現場で培った
+                        正確さ・顧客対応力・状況への適応力を強みに、
+                        小さな案件から誠実に取り組んでいきたいと思っています。
                     </p>
 
                     <h2
@@ -91,24 +76,25 @@
                         <li class="timeline-item">
                             <span class="timeline-dot"></span>
                             <div class="timeline-body">
-                                <div class="timeline-date">2024年</div>
+                                <div class="timeline-date">2026年3月</div>
                                 <div class="timeline-event">
                                     プログラミングスクール 修了
                                 </div>
                                 <div class="timeline-detail">
-                                    PHP / Laravel / Vue.js / Nuxt.js を学ぶ
+                                    PHP / Laravel / JavaScript /Vue.js / Nuxt.js
+                                    等を学ぶ
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-item">
                             <span class="timeline-dot"></span>
                             <div class="timeline-body">
-                                <div class="timeline-date">2024年</div>
+                                <div class="timeline-date">2026年3月</div>
                                 <div class="timeline-event">
                                     ポートフォリオ制作・フリーランス活動開始
                                 </div>
                                 <div class="timeline-detail">
-                                    クラウドソーシングで案件受注を目指す
+                                    クラウドソーシング等で案件受注を目指す
                                 </div>
                             </div>
                         </li>
@@ -117,10 +103,7 @@
             </div>
         </main>
 
-        <footer>
-            <p>© 2026 okumurachie — Designed &amp; Built with ♥</p>
-        </footer>
-
+        <script src="../components.js"></script>
         <script src="../script.js"></script>
     </body>
 </html>

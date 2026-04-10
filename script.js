@@ -47,8 +47,8 @@ window.addEventListener(
 );
 
 /* ============================================================
-   3. スクロールフェードインアニメーション
-      .reveal クラスの要素が画面内に入ったら .visible を付与
+3. スクロールフェードインアニメーション
+    .reveal クラスの要素が画面内に入ったら .visible を付与
    ============================================================ */
 
 const revealElements = document.querySelectorAll('.reveal');
@@ -79,15 +79,15 @@ if (revealElements.length > 0) {
 }
 
 /* ============================================================
-   4. お問い合わせフォームのバリデーション
-      contact.html にフォームがある場合のみ動作
+4. お問い合わせフォームのバリデーション
+    contact.html にフォームがある場合のみ動作
    ============================================================ */
 
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
 if (contactForm && formSuccess) {
-    contactForm.addEventListener('submit', (event) => {
+    contactForm.addEventListener('submit', async (event) => {
         event.preventDefault(); // ページリロードを防ぐ
 
         // 入力値の取得と前後の空白除去
@@ -109,16 +109,22 @@ if (contactForm && formSuccess) {
             return;
         }
 
-        // ── 送信成功の演出 ──
-        // ※ 実際に送信する場合は Formspree などのサービスと連携してください
-        //    例: fetch('https://formspree.io/f/XXXXXXXX', { method:'POST', body: new FormData(contactForm) })
-        formSuccess.hidden = false;
-        contactForm.reset();
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { Accept: 'application/json' },
+        });
 
-        // 5 秒後に成功メッセージを非表示
+        if (response.ok) {
+            formSuccess.hidden = false;
+            contactForm.reset();
+        } else {
+            alert('送信に失敗しました。もう一度お試しください。');
+        }
+        // 10 秒後に成功メッセージを非表示
         setTimeout(() => {
             formSuccess.hidden = true;
-        }, 5000);
+        }, 10000);
     });
 }
 

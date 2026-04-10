@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>okumurachie | プロジェクト</title>
+        <title>okumurachie | スキル</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,196 +16,121 @@
         <div class="bg-orb orb1" aria-hidden="true"></div>
         <div class="bg-orb orb2" aria-hidden="true"></div>
 
-        <!-- ===== ナビゲーション ===== -->
-        <nav id="navbar">
-            <a class="nav-logo" href="index.html">oku<span>.</span></a>
-            <button
-                class="hamburger"
-                id="menuBtn"
-                aria-label="メニューを開く"
-                aria-expanded="false"
-            >
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">ホーム</a></li>
-                <li>
-                    <a href="projects.html" class="nav-active">プロジェクト</a>
-                </li>
-                <li><a href="skills.html">スキル</a></li>
-                <li><a href="profile.html">プロフィール</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <!-- ナビゲーションは components.js が自動で挿入します -->
 
         <main class="page-main">
-            <!-- ページヘッダー -->
             <div class="page-header">
-                <p class="section-label">Projects</p>
-                <h1 class="section-title">制作したアプリ</h1>
+                <p class="section-label">Skills</p>
+                <h1 class="section-title">使用できる技術</h1>
                 <p class="section-desc">
-                    スクールの課題として制作した4つのWebアプリです。実際のサービスを意識して開発しました。
+                    スクールで習得した技術スタックです。実際のアプリ制作を通じて経験を積みました。
                 </p>
             </div>
 
-            <!-- プロジェクトカード一覧 -->
-            <div class="projects-grid">
-                <article class="project-card reveal">
-                    <div class="project-icon">🛒</div>
-                    <div class="project-body">
-                        <h2 class="project-name">Sample Market</h2>
-                        <p class="project-sub">フリマアプリ</p>
-                        <p class="project-desc">
-                            Laravelで構築したフリマサイト。商品の出品・購入・検索・お気に入り登録などの機能を実装しました。ユーザー認証やCSRF対策、画像アップロードにも対応しています。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Laravel</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag teal">MySQL</span>
-                            <span class="tag sky">Blade</span>
-                        </div>
+            <div class="skills-grid reveal">
+                <div class="skill-group">
+                    <div class="skill-group-title">
+                        <span class="skill-icon">⚙️</span> バックエンド
                     </div>
-                    <a
-                        class="project-link"
-                        href="https://github.com/okumurachie/SampleMarket"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        GitHub で見る
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </article>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>PHP
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>Laravel
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>RESTful API
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>MySQL
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>Eloquent ORM
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-title">
+                        <span class="skill-icon">🖥️</span> フロントエンド
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="dot dot-sky"></span>Nuxt.js
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-sky"></span>Vue.js
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-sky"></span>HTML5
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-sky"></span>CSS3
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-sky"></span>JavaScript (ES6+)
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-title">
+                        <span class="skill-icon">🛠️</span> ツール・環境
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="dot dot-teal"></span>Git / GitHub
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-teal"></span>Docker
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-teal"></span>Composer
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-teal"></span>npm
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-teal"></span>VS Code
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-title">
+                        <span class="skill-icon">📐</span> 設計・その他
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>MVC アーキテクチャ
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>SPA 開発
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span
+                            >レスポンシブデザイン
+                        </li>
+                        <li class="skill-item">
+                            <span class="dot dot-blue"></span>認証（Laravel
+                            Fortify）
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-                <article class="project-card reveal">
-                    <div class="project-icon">⏱️</div>
-                    <div class="project-body">
-                        <h2 class="project-name">TimeTrack</h2>
-                        <p class="project-sub">勤怠管理アプリ</p>
-                        <p class="project-desc">
-                            Laravelで開発した勤怠管理システム。出退勤の打刻・勤務時間の集計・管理者機能など、実務で使えるレベルを意識して実装しました。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Laravel</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag teal">MySQL</span>
-                            <span class="tag sky">Bootstrap</span>
-                        </div>
-                    </div>
-                    <a
-                        class="project-link"
-                        href="https://github.com/okumurachie/TimeTrack-portfolio"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        GitHub で見る
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-icon">🐦</div>
-                    <div class="project-body">
-                        <h2 class="project-name">Twitter 風 SNS</h2>
-                        <p class="project-sub">フルスタック SPA</p>
-                        <p class="project-desc">
-                            Nuxt.js（フロント）と Laravel
-                            API（バック）を組み合わせたSPA構成のSNSアプリ。投稿・いいね・フォロー・タイムライン表示に対応しています。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag sky">Nuxt.js</span>
-                            <span class="tag sky">Vue.js</span>
-                            <span class="tag">Laravel API</span>
-                            <span class="tag teal">REST API</span>
-                        </div>
-                    </div>
-                    <div class="project-links-row">
-                        <a
-                            class="project-link"
-                            href="https://github.com/okumurachie/Twitter-portfolio-frontend"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            Front
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                            >
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                        <a
-                            class="project-link"
-                            href="https://github.com/okumurachie/Twitter-portfolio-backend"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            Back
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                            >
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-icon">🎨</div>
-                    <div class="project-body">
-                        <h2 class="project-name">LP Sample</h2>
-                        <p class="project-sub">ランディングページ</p>
-                        <p class="project-desc">
-                            HTML・CSS・JavaScriptのみで制作したレスポンシブ対応のLP。スクロールアニメーションやハンバーガーメニューも実装しています。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag teal">HTML5</span>
-                            <span class="tag teal">CSS3</span>
-                            <span class="tag teal">JavaScript</span>
-                        </div>
-                    </div>
-                    <a
-                        class="project-link"
-                        href="https://github.com/okumurachie/LP-sample"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        GitHub で見る
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </article>
+            <div class="skills-learning reveal">
+                <h2 class="skills-learning-title">📚 現在学習中</h2>
+                <div class="learning-tags">
+                    <span class="tag">React</span>
+                    <span class="tag sky">TypeScript</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag sky">Next.js</span>
+                </div>
             </div>
         </main>
 
-        <footer>
-            <p>© 2026 okumurachie — Designed &amp; Built with ♥</p>
-        </footer>
+        <!-- フッターは components.js が自動で挿入します -->
 
+        <script src="../components.js"></script>
         <script src="../script.js"></script>
     </body>
 </html>

@@ -16,28 +16,6 @@
         <div class="bg-orb orb1" aria-hidden="true"></div>
         <div class="bg-orb orb2" aria-hidden="true"></div>
 
-        <!-- ===== ナビゲーション ===== -->
-        <nav id="navbar">
-            <a class="nav-logo" href="index.html">oku<span>.</span></a>
-            <button
-                class="hamburger"
-                id="menuBtn"
-                aria-label="メニューを開く"
-                aria-expanded="false"
-            >
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="projects.html">プロジェクト</a></li>
-                <li><a href="skills.html">スキル</a></li>
-                <li><a href="profile.html">プロフィール</a></li>
-                <li>
-                    <a href="contact.html" class="nav-active">お問い合わせ</a>
-                </li>
-            </ul>
-        </nav>
-
         <main class="page-main">
             <!-- ページヘッダー -->
             <div class="page-header">
@@ -50,7 +28,11 @@
 
             <!-- お問い合わせカード -->
             <div class="contact-card reveal">
-                <form id="contactForm" novalidate>
+                <form
+                    id="contactForm"
+                    action="https://formspree.io/f/mdaprgdn"
+                    method="POST"
+                >
                     <div class="form-grid">
                         <div class="form-group">
                             <label for="name"
@@ -122,30 +104,11 @@
                         </svg>
                         GitHub
                     </a>
-                    <a
-                        class="contact-link"
-                        href="mailto:your.email@example.com"
-                    >
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                            />
-                        </svg>
-                        メールで連絡
-                    </a>
                 </div>
             </div>
         </main>
 
-        <footer>
-            <p>© 2026 okumurachie — Designed &amp; Built with ♥</p>
-        </footer>
-
+        <script src="../components.js"></script>
         <script src="../script.js"></script>
     </body>
 </html>
