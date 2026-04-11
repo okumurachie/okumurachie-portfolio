@@ -5,7 +5,7 @@ const BASE =
 
 const NAV_HTML = `
 <nav id="navbar">
-    <a class="nav-logo" href="${BASE}/index.html">
+    <a class="nav-logo" href="${BASE}/">
         <img class="nav-image" src="${BASE}/images/inago.png" alt="いなご" />
         <span class="nav-text">C.Okumura</span>
     </a>
@@ -13,7 +13,7 @@ const NAV_HTML = `
         <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="${BASE}/index.html"    data-page="index">ホーム</a></li>
+        <li><a href="${BASE}/" data-page="index">ホーム</a></li>
         <li><a href="${BASE}/html/projects.html" data-page="projects">プロジェクト</a></li>
         <li><a href="${BASE}/html/skills.html"   data-page="skills">スキル</a></li>
         <li><a href="${BASE}/html/profile.html"  data-page="profile">プロフィール</a></li>
